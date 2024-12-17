@@ -1,53 +1,14 @@
-# sqlProject
-D? ·n: H? Th?ng Qu?n L˝ C?a H‡ng T?p HÛa
-1. Gi?i thi?u d? ·n
-D? ·n H? Th?ng Qu?n L˝ C?a H‡ng T?p HÛa l‡ b‡i t?p l?n n?m trong h?c ph?n C? s? d? li?u t?i Tr??ng ?H CÙng Ngh?- ?HQGHN. M?c tiÍu c?a d? ·n l‡ x‚y d?ng c? s? d? li?u ?? qu?n l˝ c·c ho?t ??ng kinh doanh c?a m?t c?a h‡ng t?p hÛa, bao g?m:
-* Qu?n l˝ thÙng tin m?t h‡ng v‡ nhÛm m?t h‡ng.
-* Qu?n l˝ thÙng tin kh·ch h‡ng v‡ l?ch s? mua h‡ng.
-* Th?c hi?n c·c truy v?n SQL ?? trÌch xu?t thÙng tin h?u Ìch ph?c v? qu?n l˝ v‡ ph‚n tÌch doanh thu.
-2. MÙ t? c? s? d? li?u
-C? s? d? li?u bao g?m c·c b?ng chÌnh:
-1. M?tH‡ng
-o M„MH (int): M„ m?t h‡ng.
-o TÍnMH (string): TÍn m?t h‡ng.
-o ??nV?TÌnh (string): ??n v? tÌnh c?a m?t h‡ng (vÌ d?: c·i, kg, h?p).
-o ??nGi· (double): Gi· b·n c?a m?t h‡ng.
-o Ng‡yNh?p (date): Ng‡y nh?p m?t h‡ng v‡o kho.
-o NhÛmH‡ng (int): M„ nhÛm m?t h‡ng.
-o S?L??ngT?nKho (int): S? l??ng cÚn l?i trong kho.
-2. NhÛmM?tH‡ng
-o M„NhÛmMH (int): M„ nhÛm m?t h‡ng.
-o TÍnNhÛmMH (string): TÍn nhÛm m?t h‡ng (vÌ d?: H‡ng ?i?n t?, H‡ng gia d?ng).
-3. Kh·chH‡ng
-o M„KH (int): M„ kh·ch h‡ng.
-o TÍnKH (string): TÍn kh·ch h‡ng.
-o ??aCh? (string): ??a ch? kh·ch h‡ng.
-o S??T (string): S? ?i?n tho?i kh·ch h‡ng.
-o ?i?mTh??ng (int): ?i?m th??ng tÌch l?y c?a kh·ch h‡ng.
-4. MuaH‡ng
-o M„MH (int): M„ m?t h‡ng.
-o M„KH (int): M„ kh·ch h‡ng.
-o Ng‡yMua (date): Ng‡y kh·ch h‡ng mua h‡ng.
-o S?L??ng (int): S? l??ng m?t h‡ng ???c mua.
-3. C·c truy v?n SQL chÌnh
-a. Truy v?n 1: Kh·ch h‡ng mua h‡ng thu?c nhÛm "H‡ng ?i?n t?" trong kho?ng 01/05/2015 ??n 30/05/2015
-* Tr? v? tÍn v‡ ??a ch? c?a kh·ch h‡ng.
-b. Truy v?n 2: TÏm m?t h‡ng b·n ch?y nh?t (doanh thu l?n nh?t)
-* Doanh thu = S? l??ng b·n ???c * ??n gi·.
-c. Truy v?n 3: ??m s? l??ng m?t h‡ng thu?c nhÛm "H‡ng gia d?ng"
-d. Truy v?n 4: TÏm kh·ch h‡ng cÛ t?ng gi· tr? mua h‡ng l?n nh?t trong kho?ng 01/01/2015 ??n 25/10/2015
-* T?ng gi· tr? h‡ng mua = ? (S? l??ng * ??n gi·).
-4. Th‡nh viÍn nhÛm
-D? ·n ???c th?c hi?n b?i c·c th‡nh viÍn sau:
-STTH? v‡ TÍnVai TrÚGhi Ch˙1L??ng Minh TrÌPh‚n tÌch yÍu c?u, thi?t k? CSDL2Ki?u Qu?c CÙngX‚y d?ng v‡ vi?t c·c c‚u l?nh SQL3Ho‡ng Minh V?Ho‡n thi?n t‡i li?u v‡ ki?m th?5. CÙng c? s? d?ng
-* H? qu?n tr? CSDL: MySQL.
-* NgÙn ng? truy v?n: SQL.
-* CÙng c? h? tr?: MySQL Workbench.
-6. H??ng d?n s? d?ng
-1. T?o c? s? d? li?u:
-o Ch?y script SQL ?? t?o b?ng v‡ d? li?u m?u.
-2. Th?c hi?n c·c truy v?n:
-o Ch?y c·c c‚u l?nh SQL trong cÙng c? h? tr?.
-3. Ki?m tra k?t qu?:
-o ??i chi?u k?t qu? c?a truy v?n v?i yÍu c?u c?a b‡i to·n.
+## D·ª± √°n: H·ªá Th·ªëng Qu·∫£n L√Ω C·ª≠a H√†ng T·∫°p H√≥a
 
+### Gi·ªõi thi·ªáu d·ª± √°n
+D·ª± √°n **H·ªá Th·ªëng Qu·∫£n L√Ω C·ª≠a H√†ng T·∫°p H√≥a** l√† b√†i t·∫≠p l·ªõn n·∫±m trong h·ªçc ph·∫ßn **C∆° s·ªü d·ªØ li·ªáu** t·∫°i Tr∆∞·ªùng **ƒêH C√¥ng Ngh·ªá - ƒêHQGHN**. M·ª•c ti√™u c·ªßa d·ª± √°n l√†:
+- X√¢y d·ª±ng c∆° s·ªü d·ªØ li·ªáu ƒë·ªÉ qu·∫£n l√Ω c√°c ho·∫°t ƒë·ªông kinh doanh c·ªßa c·ª≠a h√†ng t·∫°p h√≥a.
+- Qu·∫£n l√Ω th√¥ng tin m·∫∑t h√†ng, nh√≥m m·∫∑t h√†ng, kh√°ch h√†ng v√† l·ªãch s·ª≠ mua h√†ng.
+- Th·ª±c hi·ªán c√°c truy v·∫•n SQL ƒë·ªÉ ph√¢n t√≠ch doanh thu.
+
+### Th√†nh vi√™n nh√≥m
+| STT | H·ªç v√† T√™n          | Vai Tr√≤                           | Ghi Ch√∫          |
+|-----|--------------------|-----------------------------------|------------------|
+| 1   | L∆∞∆°ng Minh Tr√≠     | Ph√¢n t√≠ch y√™u c·∫ßu, thi·∫øt k·∫ø CSDL  |                  |
+| 2   | Ki·ªÅu Qu·ªëc C√¥ng     | X√¢y d·ª±ng v√† vi·∫øt c√°c c√¢u l·ªánh SQL |                  |
+| 3   | Ho√†ng Minh V≈©      | Ho√†n thi·ªán t√†i li·ªáu v√† ki·ªÉm th·ª≠   |                  |
