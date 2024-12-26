@@ -31,3 +31,9 @@ WHERE HD.ngay_mua BETWEEN '2024-06-01' AND '2024-06-15'
 GROUP BY KH.ten_kh, KH.dia_chi, KH.so_dt
 ORDER BY tong_gia_tri DESC
 LIMIT 1;
+# Câu 5: xem danh sách nhập hàng từ nhà cung cấp
+SELECT nh.ma_nhap, nh.ngay_nhap, nh.tong_tien
+FROM nhap_hang nh
+WHERE nh.ma_ncc = 1
+ORDER BY nh.ngay_nhap DESC;
+

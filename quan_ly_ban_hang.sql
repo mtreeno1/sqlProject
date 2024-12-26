@@ -60,5 +60,32 @@ CREATE TABLE chi_tiet_nhap_hang (
     FOREIGN KEY (ma_nhap) REFERENCES nhap_hang(ma_nhap),
     FOREIGN KEY (ma_mh) REFERENCES mat_hang(ma_mh)
 );
+ALTER TABLE hoa_don
+ADD COLUMN diem_su_dung INT DEFAULT 0;
+
+ALTER TABLE mat_hang
+ADD CONSTRAINT unique_ten_mh_nhom_hang UNIQUE (ten_mh, nhom_hang);
+
+-- Tạo bảng tạm để lưu thông tin tổng hợp
+CREATE TEMPORARY TABLE temp_mat_hang AS
+SELECT ten_mh, nhom_hang, MIN(ma_mh) AS min_ma_mh, SUM(so_luong_ton_kho) AS total_so_luong
+FROM mat_hang
+GROUP BY ten_mh, nhom_hang;
+
+-- Cập nhật số lượng tồn kho trong bảng chính dựa trên bảng tạm
+UPDATE mat_hang m1
+JOIN temp_mat_hang t
+ON m1.ma_mh = t.min_ma_mh
+SET m1.so_luong_ton_kho = t.total_so_luong;
+SET SQL_SAFE_UPDATES = 0;
+
+-- Xóa các hàng trùng lặp (không phải hàng có mã nhỏ nhất)
+DELETE m1
+FROM mat_hang m1
+LEFT JOIN temp_mat_hang t
+ON m1.ma_mh = t.min_ma_mh
+WHERE t.min_ma_mh IS NULL;
+
+SELECT * FROM mat_hang;
 
 

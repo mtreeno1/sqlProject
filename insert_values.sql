@@ -16,6 +16,7 @@ VALUES
 ('Đồ dùng học tập'),
 ('Thức ăn cho thú cưng');
 
+SELECT * from mat_hang where nhom_hang = 1;
 
 INSERT INTO mat_hang (ten_mh, don_vi_tinh, don_gia, ngay_nhap, so_luong_ton_kho, nhom_hang) 
 VALUES 
@@ -35,7 +36,9 @@ VALUES
 ('Sữa đặc Ông Thọ', 'Lon', 20000, '2024-06-08', 90, 8),
 ('Cà phê G7', 'Hộp', 55000, '2024-06-08', 70, 1);
 
-
+INSERT INTO mat_hang (ten_mh, don_vi_tinh, don_gia, ngay_nhap, so_luong_ton_kho, nhom_hang) 
+VALUES ('Pepsi', 'Lon', 9500, '2024-06-02', 1200, 1);
+SELECT * FROM mat_hang;
 
 INSERT INTO khach_hang (ten_kh, dia_chi, so_dt, diem_thuong) 
 VALUES 
@@ -190,3 +193,5 @@ VALUES
 (9, 13, 85, 33000, 2805000),
 (10, 14, 90, 18000, 1620000),
 (11, 15, 70, 50000, 3500000);
+
+SELECT * FROM mat_hang;
